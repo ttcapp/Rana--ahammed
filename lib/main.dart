@@ -39,18 +39,22 @@ class _MyHomePageState extends State<MyHomePage> {
           color: Colors.purpleAccent,
           height: height,
           width: width,
-          child: Column(
-            children: [
-              Container(
-                height:height/3,
-                 width:width/2,
-                  child: Image.network(imgsrc1)),
-              Text("this is a image",style: TextStyle(
-                fontSize: 25,fontWeight: FontWeight.bold,
-                color: Colors.blue,backgroundColor: Colors.yellow
-              ),
-              )
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Image.asset("assest/image/image2.jpg"),
+                Image.asset("assest/image/images.jpg"),
+                Container(
+                  height:height/3,
+                   width:width/2,
+                    child: Image.network(imgsrc1)),
+                Text("this is a image",style: TextStyle(
+                  fontSize: 25,fontWeight: FontWeight.bold,
+
+                ),
+                )
+              ],
+            ),
           ),
         ),
       )
