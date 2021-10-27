@@ -42,8 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Image.asset("assest/image/image2.jpg"),
-                Image.asset("assest/image/images.jpg"),
+                Image.asset("assets/image/image2.jpg"),
+                Image.asset("assets/image/images.jpg"),
                 Container(
                   height:height/3,
                    width:width/2,
