@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rana_ahammed">
    <application
-        android:label="rana_ahammed"
+        android:label="Flower Apps"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
