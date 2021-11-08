@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rana_ahammed/log_in.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar:AppBar(centerTitle: true,
-        title: Text("Bsmrstu",style: TextStyle(
+        title: Text("Flowers",style: TextStyle(
           fontWeight: FontWeight.bold,color: Colors.white,
         ),),
       ),
@@ -42,6 +43,12 @@ class _MyHomePageState extends State<MyHomePage> {
           child: SingleChildScrollView(
             child: Column(
               children: [
+                ElevatedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: ( context)=>Login()));
+                    },
+                    child: Text("lOG In")
+                ),
                 Image.asset("assets/image/image2.jpg"),
                 Image.asset("assets/image/images.jpg"),
                 Container(
